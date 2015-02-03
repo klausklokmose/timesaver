@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_new_color"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/times1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/define_schedule"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/credits"
+            android:src="@drawable/back_arrow"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/rowColor"
+        android:focusableInTouchMode="true"
+        android:gravity="start|center_vertical"
+        android:minHeight="60dp" >
+
+        <ImageView
+            android:id="@+id/mainImg"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/adapter_image"
+            android:scaleType="fitXY"
+            android:src="@drawable/bluetooth_gps" />
+
+        <CheckBox
+            android:id="@+id/sch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/schedule"
+            android:textColor="@color/text" />
+
+        <CheckBox
+            android:id="@+id/allD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/all_day"
+            android:textColor="@color/text" />
+
+    </TableRow>
+
+    <ListView
+        android:id="@+id/listSch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/dividerColor"
+        android:dividerHeight="1dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false" >
+    </ListView>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:minHeight="60dp" >
+
+        <TextView
+            android:id="@+id/prox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:paddingLeft="7dp"
+            android:paddingStart="7dp"
+            android:text="@string/proximity"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:entries="@array/proximity"
+            android:singleLine="true" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/savedLocations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/menu_list_space"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF"
+        android:padding="6dp"
+        android:paddingBottom="4dp"
+        android:text="@string/saved_locations"
+        android:textColor="@color/text" />
+
+</LinearLayout>

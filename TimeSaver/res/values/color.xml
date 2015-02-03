@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Theme colors -->
+    <color name="themeColor">#8BC34A</color>
+    <color name="actionBar">#689F38</color>
+	<color name="secondaryColor">#FFC107</color>
+	
+	
+    <color name="dividerColor">#00FFFFFF</color>
+    <color name="rowColor">#F8FCFB</color>
+    <color name="rowPressedColor">#BAD4A9</color>
+    <color name="second_color">#ECF1EA</color>
+    <color name="bgColor">#252525</color>
+    <color name="white">#FFF</color>
+
+    <color name="hintTextColor">#829B74</color>
+    <color name="buttonColor">#8cc146</color><!-- 09c600 -->
+    <color name="buttonOutColor">#505b48</color>
+    <color name="button_pressed">#77886c</color>
+    <color name="line_color">#09c600</color>
+    <color name="my_new_color">#8cc146</color>  <!-- A6CE21 -->
+    <color name="text">#000000</color>
+    
+    
+
+</resources>

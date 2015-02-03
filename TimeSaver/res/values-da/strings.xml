@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WiFi Saver</string>
+    <string name="Set">nothing</string>
+    <string name="lng">Long:</string>
+    <string name="medium_text">Medium Text</string>
+    <string name="lat">Lat:</string>
+    <string name="turn_on_bluetooth">Tænd Bluetooth</string>
+    <string name="turn_off_bluetooth">Sluk Bluetooth</string>
+    <string name="turn_on_wifi">Tænd WiFi</string>
+    <string name="turn_off_wifi">Sluk WiFi</string>
+    <string name="title">titel</string>
+    <string name="saved_locations">Gemte steder</string>
+    <string name="get_gps_location">Brug GPS</string>
+    <string name="or_define_it_manually">manuel adresse...</string>
+    <string name="save">Gem</string>
+    <string name="home_or_work_">Sted-navn...</string>
+    <string name="image_for_new_location">image for new location</string>
+
+    <string-array name="proximity">
+        <item>100 m</item>
+        <item>150 m</item>
+        <item>200 m</item>
+        <item>500 m</item>
+        <item>1000 m (1 km)</item>
+    </string-array>
+
+    
+       <string name="yes">ja</string>
+    <string name="no">nej</string>
+    <string name="cancel">fortryd</string>
+    <string name="confirm">bekræft</string>
+    
+    
+    <string name="repeating_days">Gentagne dage</string>
+    <string name="using_locations">Vælg steder</string>
+    
+    <string name="warning_GPS_interval">ADVARSEL\nKorte intervaller kan forkorte batteri-levetid!</string>
+       <string name="confirmDelete">Vil du slette denne tidsplan?</string>
+    <string name="from">Fra: </string>
+    <string name="to">Til: </string>
+    <string name="define_schedule">Definer tidsplan</string>
+    <string name="schedule">Efter tidsplan</string>
+    <string name="all_day">Hele dagen</string>
+    <string name="proximity">Afstand</string>
+    <string name="saved_location">sted er gemt</string>
+    <string name="adapter_image">Adapter image</string>
+    <string name="thank">Thank you for downloading this application.</string>
+    <string name="main1">In the main screen you can create and delete schedules.\nCreate a schedule by selecting the “plus”-icon placed in the top-right.</string>
+    <string name="main2">Delete a schedule by holding down a schedule in the list until a dialog appears, asking for your confirmation.</string>
+    <string name="sched1">When creating a schedule, there are two main choices. Make a schedule based on a time schedule (and perhaps also locations), or a schedule based only on locations. Choose either by selecting the “Schedule” or “All day” checkbox.</string>
+    <string name="sched2">
+        1. Select an adapter (either Bluetooth or WiFi) to be controlled by the schedule.\n
+        2. Select a time of day that you wish to start the adapter.\n
+        3. Select a time of day that you wish to stop the adapter.\n
+        4. Select days to repeat the schedule. !! (if no days are selected, the schedule will be repeated every day)\n
+        5. *Specify locations that the phone should be in proximity of, in order for the adapter state to be changed 
+        (on/off). Selected locations can quickly be viewed at the bottom of the screen.\n
+        6. *Specify settings for proximity (in meters) for locations selected above.
+\n\n* - Optional</string>
+    <string name="sched3">
+        1. Vælg om endten Bluetooth eller WiFi skal bruges med planen.\n
+        2. Vælg steder som telefonen skal være i nærheden af før BT eller WiFi skal tænde. Valgte steder skal ses
+        i bunden af skærmen. Ét sted skal vælges!\n
+        3. Vælg indstillinger for afstand (i meter) for steder.
+        </string>
+    <string name="locs1">Tilføj et sted ved at trykke på plus-ikon\'et.\n
+        1. Skriv navn på sted.\n
+        2. *Ha\' GPS tændt og tryk på "Brug GPS"\n
+        3. *Skriv en adresse manuelt.\n4. Tryk "Gem"\n\n
+        * - Valgfri.\n\n
+        Slet sted ved at trykke og holde nede indtil en dialog kommer frem.</string>
+    <string name="credits">\u00A9 KlokWorks</string>
+    <string name="main_screen">Main screen</string>
+    <string name="about11">om</string>
+    <string name="schedules">Tidsplaner</string>
+    <string name="making_a_time_schedule_">Making a time schedule:</string>
+    <string name="making_an_all_day_schedule_">Making an All Day schedule:</string>
+    <string name="restricted_wifi_hotspots">Restricted Wifi HotSpots</string>
+    <string name="about">om</string>
+    <string name="set_gps_update_rate">Sæt GPS opdateringsinterval</string>
+    <string name="wifi">WiFi</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="wifi_sched">WiFi\\ntidsplan</string>
+    <string name="_schedules_">| tidsplaner |</string>
+    <string name="bt">BT</string>
+    <string name="initial_lat_lng">lat:   xx.xxxxxx\\nlng:  xx.xxxxxx</string>
+    <string name="_larr">&amp;larr</string>
+    <string name="_">←</string>
+    <string name="lat_xx_xxxxxx_nlng_xx_xxxxxx">Lat:   xx.xxxxxx\nLng:  xx.xxxxxx</string>
+    <string name="hint_on_accurate_address">(præcis adresse er vigtig,\n
+        ellers kan du bruge GPS)</string>
+    <string name="push_to_edit_hold_down_to_delete">Tryk på sted for at ændre\nHold nede for at slette</string>
+    <string name="push_to_edit">Tryk for at ændre</string>
+    <string name="hold_down_to_delete">Hold nede for at slette</string>
+
+</resources>

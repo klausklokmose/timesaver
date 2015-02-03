@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WiFi Saver</string>
+    <string name="Set">nothing</string>
+    <string name="lng">Long:</string>
+    <string name="medium_text">Medium Text</string>
+    <string name="lat">Lat:</string>
+    <string name="turn_on_bluetooth">Turn ON Bluetooth</string>
+    <string name="turn_off_bluetooth">Turn OFF Bluetooth</string>
+    <string name="turn_on_wifi">Turn ON WiFi</string>
+    <string name="turn_off_wifi">Turn OFF WiFi</string>
+    <string name="title">title</string>
+    <string name="saved_locations">Saved locations</string>
+    <string name="get_gps_location">Use GPS</string>
+    <string name="or_define_it_manually">manual address...</string>
+    <string name="save">Save</string>
+    <string name="home_or_work_">location name...</string>
+    <string name="image_for_new_location">image for new location</string>
+
+    <string-array name="proximity">
+        <item>100 m</item>
+        <item>150 m</item>
+        <item>200 m</item>
+        <item>500 m</item>
+        <item>1000 m (1 km)</item>
+    </string-array>
+
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="cancel">cancel</string>
+    <string name="confirm">confirm</string>
+    
+    
+    <string name="repeating_days">Repeating days</string>
+    <string name="using_locations">Using locations</string>
+    
+    
+    <string name="warning_GPS_interval">WARNING\nShort intervals might decrease battery lifetime!</string>
+    <string name="confirmDelete">Do you want to delete this schedule?</string>
+    <string name="from">FROM: </string>
+    <string name="to">TO: </string>
+    <string name="define_schedule">Define schedule</string>
+    <string name="schedule">Time Schedule</string>
+    <string name="all_day">All Day</string>
+    <string name="proximity">Proximity</string>
+    <string name="saved_location">saved location</string>
+    <string name="adapter_image">Adapter image</string>
+    <string name="thank">Thank you for downloading this application.</string>
+    <string name="main1">In the main screen you can create and delete schedules.\nCreate a schedule by selecting the “plus”-icon placed in the top-right.</string>
+    <string name="main2">Delete a schedule by holding down a schedule in the list until a dialog appears, asking for your confirmation.</string>
+    <string name="sched1">When creating a schedule, there are two main choices. Make a schedule based on a time schedule (and perhaps also locations), or a schedule based only on locations. Choose either by selecting the “Schedule” or “All day” checkbox.</string>
+    <string name="sched2">1. Select an adapter (either Bluetooth or WiFi) to be controlled by the schedule.\n2. Select a time of day that you wish to start the adapter.\n3. Select a time of day that you wish to stop the adapter.\n4. Select days to repeat the schedule. !! (if no days are selected, the schedule will be repeated every day)\n5. *Specify locations that the phone should be in proximity of, in order for the adapter state to be changed (on/off). Selected locations can quickly be viewed at the bottom of the screen.\n6. *Specify settings for proximity (in meters) for locations selected above.
+\n\n* - Optional</string>
+    <string name="sched3">1. Select an adapter (either Bluetooth or WiFi) to be controlled by the schedule.\n2. Specify locations that the phone should be in proximity of, in order for the adapter state to be changed (on/off). Selected locations can quickly be viewed at the bottom of the screen. One location must be chosen!\n3. Specify settings for proximity (in meters) for locations selected above</string>
+    <string name="locs1">Create a location by selecting the “plus”-icon placed in the top-right. \n1. Enter a name for the location.\n2. *Have GPS enabled and press “Get GPS location”.\n3. *Enter an address manually.\n4. Press “Save and back”.
+\n\n* - Optional.\n\nDelete location by holding down a location in the list until a dialog appears, asking for your confirmation.</string>
+    <string name="credits">\u00A9 Klaus Klokmose Nielsen</string>
+    <string name="main_screen">Main screen</string>
+    <string name="about11">About</string>
+    <string name="schedules">Schedules</string>
+    <string name="making_a_time_schedule_">Making a time schedule:</string>
+    <string name="making_an_all_day_schedule_">Making an All Day schedule:</string>
+    
+    <string name="restricted_wifi_hotspots">Restricted Wifi HotSpots</string>
+    <string name="about">about</string>
+    <string name="set_gps_update_rate">Set GPS update rate</string>
+    <string name="wifi">WiFi</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="wifi_sched">WiFi\\nschedule</string>
+    <string name="_schedules_">| schedules |</string>
+    <string name="bt">BT</string>
+    <string name="initial_lat_lng">lat:   xx.xxxxxx\\nlng:  xx.xxxxxx</string>
+    <string name="_larr">&amp;larr</string>
+    <string name="_">+</string>
+    <string name="lat_xx_xxxxxx_nlng_xx_xxxxxx">Lat:   xx.xxxxxx\nLng:  xx.xxxxxx</string>
+    <string name="hint_on_accurate_address">(accurate address is important,\notherwise use the gps button)</string>
+    <string name="push_to_edit_hold_down_to_delete">Push to edit\nHold down to delete</string>
+    <string name="push_to_edit">Push to edit</string>
+    <string name="hold_down_to_delete">Hold down to delete</string>
+    <string name="new_schedule">new Schedule</string>
+    <string name="test_23_00_09_00">23:00 - 09:00</string>
+    <string name="test_mon_tue_wed_thu_fri_sat_sun">Mon Tue Wed Thu Fri Sat Sun</string>
+
+</resources>

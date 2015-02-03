@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toggleWiFi"
+        android:icon="@drawable/wifi"
+        yourapp:showAsAction="ifRoom|withText"
+        android:orderInCategory="100"
+        android:title="@string/turn_on_wifi"/>
+    <item
+        android:id="@+id/toggleBT"
+        android:orderInCategory="100"
+        android:icon="@drawable/bluetooth"
+        yourapp:showAsAction="ifRoom"
+        android:title="@string/turn_on_bluetooth"/>
+    <item
+        android:id="@+id/update_rate"
+        android:orderInCategory="100"
+        android:title="@string/set_gps_update_rate"/>
+    <item
+        android:id="@+id/BigBar"
+        android:orderInCategory="100"
+        android:title="@string/about"/>
+    <item
+        android:id="@+id/RestrictedHotSpots"
+        android:orderInCategory="100"
+        android:title="@string/restricted_wifi_hotspots"/>
+
+</menu>
