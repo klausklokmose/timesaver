@@ -28,7 +28,8 @@ import dk.klaus.timesaver.LocationDB;
 import dk.klaus.timesaver.Schedule;
 import dk.klaus.timesaver.ScheduleActivity;
 
-public class ScheduleHandler extends BroadcastReceiver implements LocationListener {
+public class ScheduleHandler extends BroadcastReceiver implements
+		LocationListener {
 
 	private Location locManager;
 	private static LocationManager locationManager;
@@ -71,8 +72,9 @@ public class ScheduleHandler extends BroadcastReceiver implements LocationListen
 		// Start up alarm managers for all the schedules
 		if (action.equals(Intent.ACTION_BOOT_COMPLETED)) {
 			Log.d("new receiver", "action is: boot");
-			//TODO toast
-//			Toast.makeText(context, "BOOT COMPLETED", Toast.LENGTH_LONG).show();
+			// TODO toast
+			// Toast.makeText(context, "BOOT COMPLETED",
+			// Toast.LENGTH_LONG).show();
 			for (int i = 0; i < scheds.size(); i++) {
 				Schedule s = scheds.get(i);
 				// if this is a normal time schedule
@@ -116,20 +118,20 @@ public class ScheduleHandler extends BroadcastReceiver implements LocationListen
 
 		isGPSEnabled = locationManager
 				.isProviderEnabled(LocationManager.GPS_PROVIDER);
-		// if(isGPSEnabled==true){
-		// Toast.makeText(context, "Updating..." + locManager.getProvider(),
-		// Toast.LENGTH_SHORT).show();
-
-		// Initialize the location fields
-		if (locManager != null) {
-			locManager = locationManager
-					.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-			lat = locManager.getLatitude();
-			lng = locManager.getLongitude();
-			saveNewLocation();
-		}
-		doSomething();
-
+		 if(isGPSEnabled == true){
+			// Toast.makeText(context, "Updating..." + locManager.getProvider(),
+			// Toast.LENGTH_SHORT).show();
+	
+			// Initialize the location fields
+			if (locManager != null) {
+				locManager = locationManager
+						.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+				lat = locManager.getLatitude();
+				lng = locManager.getLongitude();
+				saveNewLocation();
+			}
+			doSomething();
+		 }
 		setRepeat();
 	}
 
@@ -137,9 +139,9 @@ public class ScheduleHandler extends BroadcastReceiver implements LocationListen
 		int id = s.getId();
 		Intent intent = new Intent(c, FindAlarm.class);
 		intent.putExtra("ID", "" + id);
-		Log.w("SET ALARM", "" + id);
+		Log.i("SET ALARM", "" + id);
 		intent.putExtra("FROM", "" + from);
-		Log.w("SET ALARM", "" + from);
+		Log.i("SET ALARM", "" + from);
 		intent.setAction("" + id);
 		PendingIntent pendingIntent = PendingIntent.getBroadcast(c, id, intent,
 				PendingIntent.FLAG_CANCEL_CURRENT);
@@ -153,7 +155,8 @@ public class ScheduleHandler extends BroadcastReceiver implements LocationListen
 		// TODO
 		am.set(AlarmManager.RTC_WAKEUP, alarm.getTimeInMillis(), pendingIntent);
 
-		Toast.makeText(c, "Time saver is restarting alarm(s)",
+		//TODO only for BETA!
+		Toast.makeText(c, "ONLY FOR BETA:\nTime saver is restarting alarm(s)",
 				Toast.LENGTH_SHORT).show();
 		Log.d("RESTART ALARM",
 				"set for " + alarm.get(Calendar.DAY_OF_MONTH) + ": "
@@ -262,7 +265,8 @@ public class ScheduleHandler extends BroadcastReceiver implements LocationListen
 									&& u.getTimeStamp() < s.getProximity()) {
 								Log.d("TRIGGER", "TRUE");
 								// if this schedule is set for controlling WiFi
-								if (s.getAdapter().equals(ScheduleActivity.WIFI)) {
+								if (s.getAdapter()
+										.equals(ScheduleActivity.WIFI)) {
 									wifiOn = true;
 									// else if it is set for controlling
 									// Bluetooth
@@ -305,7 +309,7 @@ public class ScheduleHandler extends BroadcastReceiver implements LocationListen
 					}
 				}
 			}// END wifi
-			// TODO Check if the user has manually turned off WiFi schedules
+				// TODO Check if the user has manually turned off WiFi schedules
 			if (getToggle("BT")) {
 				if (!cancelBluetoothAction) {
 					if (bluOn) {

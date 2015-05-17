@@ -28,7 +28,6 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 import dk.klaus.timesaver.background.ScheduleHandler;
 
-@SuppressLint("NewApi")
 public class MainActivity extends ActionBarActivity {
 	static List<Schedule> schedules;
 	private static RecyclerView listView;
@@ -65,9 +64,7 @@ public class MainActivity extends ActionBarActivity {
 		startBackgroundServicesIfNotRunning();
 
 		setupToggles();
-		// wifiBTbar = (LinearLayout) findViewById(R.id.bigBar);
-		// wifiBTbar.getBackground().setAlpha(200);
-
+//		throw new RuntimeException("hello error");
 	}
 
 	private void setupToggles() {
